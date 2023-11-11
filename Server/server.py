@@ -39,5 +39,4 @@ def predictor():
 
 if __name__ == '__main__':
     print("Starting Flask Server")
-    util.load_saved_resources()
     app.run()
