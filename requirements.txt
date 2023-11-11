@@ -1,5 +1,5 @@
 scikit-learn==0.24.2
-numpy==1.26.1
+numpy==1.21.2  # Adjust this version to one compatible with scikit-learn 0.24.2
 gunicorn==21.2.0
 Flask==2.0.1
 requests==2.26.0
