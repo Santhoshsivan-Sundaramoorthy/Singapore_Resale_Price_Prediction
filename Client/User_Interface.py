@@ -3,14 +3,14 @@ import requests
 
 # Function to get data from the Flask server
 def get_data():
-    url = 'http://127.0.0.1:5000/get_data'  # Replace with your Flask server URL
+    url = 'https://flask-server-pkmr.onrender.com/get_data'  # Replace with your Flask server URL
     response = requests.get(url)
     data = response.json()
     return data
 
 # Function to make predictions using the Flask server
 def predict(town, flat_type, storey_range, floor_area_sqm, flat_model, lease_commence_date, sales_year, sales_month):
-    url = 'http://127.0.0.1:5000/predictor'  # Replace with your Flask server URL
+    url = 'https://flask-server-pkmr.onrender.com/predictor'  # Replace with your Flask server URL
     data = {
         'town': town,
         'flat_type': flat_type,
