@@ -44,6 +44,7 @@ def get_estimated_price(town, flat_type, storey_range, floor_area_sqm, flat_mode
 
 
 def get_categorical():
+    load_saved_resources()
     town = [x.replace('town_', '') for x in __town]
     flat_model = [x.replace('flat_model_', '') for x in __flat_model]
     flat_type = [x.replace('flat_type_', '') for x in __flat_type]
@@ -76,7 +77,6 @@ def load_saved_resources():
 
 
 if __name__ == '__main__':
-    load_saved_resources()
     print(get_categorical(), '\n')
     print(get_estimated_price(town = 'ANG MO KIO', flat_type = '1 ROOM', storey_range = 'Mid-Rise', floor_area_sqm = 31.0, flat_model= 'IMPROVED', lease_commence_date = 1977, sales_year = 2025,sales_month = 'Q4'))
 
